@@ -1,7 +1,11 @@
-<a href="/">返回首頁</a><br>
+{% extends "base.html" %}
+{% block title %}文章葉面{% endblock %}
+{% block headmessage %}<h1>顯示文章</h1>>{% endblock %}
+{% block content %}
 <table width=800 border=1>
 標題:{{target.title}}<br>
 張貼時間{{target.pub_date}}
 內容<br>
 {{target.body}}
 </table>
+{% endblock %}
